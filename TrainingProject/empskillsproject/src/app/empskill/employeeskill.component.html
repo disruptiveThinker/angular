@@ -1,0 +1,60 @@
+﻿<div class="col-md-6 col-md-offset-3">
+
+</div>
+
+
+<div class="col-sm-12">
+  <h3>Update Employee Skills</h3>
+  <form class="well" #f="ngForm"><!--{{f.value | json}}-->
+    <!--<div class="form-group">-->
+      Employee Id: <input placeholder="Enter Id" type="text" name="txtEmpId"
+                          [(ngModel)]="frmEmployee.empId" #txtEmpId="ngModel" required >
+      <b style="color:red" *ngIf="!txtEmpId.valid && txtEmpId.dirty">Employee Id is required</b>
+    <!--</div>-->
+    <!--<div class="form-group">-->
+      Employee Name: <input placeholder="Enter Name" type="text" name="txtEmpName"
+                            [(ngModel)]="frmEmployee.empName" #txtEmpName="ngModel" required >
+      <b style="color:red" *ngIf="!txtEmpName.valid && txtEmpName.dirty">Employee Name is required</b>
+    <!--</div>-->
+   <!-- <div class="form-group">-->
+      Department Name: <input placeholder="Enter Department" type="text" name="txtDeptName"
+                              [(ngModel)]="frmEmployee.deptId" #txtDeptName="ngModel" required >
+      <b style="color:red" *ngIf="!txtDeptName.valid && txtDeptName.dirty">Department is required</b>
+   <!-- </div>-->
+    <!--<div class="form-group">-->
+      Manager Name: <input placeholder="Enter Manager" type="text" name="txtManagerName"
+                           [(ngModel)]="frmEmployee.managerId" #txtManagerName="ngModel" required >
+      <b style="color:red" *ngIf="!txtManagerName.valid && txtManagerName.dirty">Manager is required</b>
+   <!-- </div>-->
+    <button type="button" class="btn btn-primary" (click)="saveEmployee()" [disabled]="f.invalid">
+      Save
+    </button>
+
+  </form>
+
+
+  <h3>Skills List</h3>
+  <table class="table table-bordered table-striped">
+    <tr>
+      <th>Emp Id</th>
+      <th>Name</th>
+      <th>Department Name</th>
+      <th>Manager Name</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let employee of manageEmployees; let i = index">
+      <td>{{employee.empId}}</td>
+      <td>{{employee.empName}}</td>
+      <td>{{employee.deptId}}</td>
+      <td>{{employee.managerId}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteEmployee(employee.id, i)">Delete</button>
+        <button class="btn btn-success" (click)="editEmployee(employee, i)">Edit</button>
+      </td>
+    </tr>
+    <tr *ngIf="manageEmployees.length==0">
+       <th colspan="3">No Employees Found</th>
+     </tr>
+  </table>
+  </div>
+

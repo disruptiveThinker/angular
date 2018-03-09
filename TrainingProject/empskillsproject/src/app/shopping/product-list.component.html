@@ -1,0 +1,14 @@
+<h3>List of Products</h3>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th><th>Price</th><th>Action</th>
+  </tr>
+  <tr *ngFor="let product of products">
+    <td><a [routerLink]="['/details', product.id]">{{product.name}}</a></td>
+    <td>{{product.price}}</td>
+    <td><button class="btn btn-primary" (click)="addToCart(product)">Add To Cart</button></td>
+  </tr>
+  <tr *ngIf="products.length==0">
+    <th colspan="3">No Products Found</th>
+  </tr>
+</table>
