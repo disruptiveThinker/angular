@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"skillId": {
+			"name": "skillId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "skillId",
+			"order": 0
+		},
+		"technology": {
+			"name": "technology",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "technology",
+			"order": 1
+		},
+		"framework": {
+			"name": "framework",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "framework",
+			"order": 2
+		},
+		"domain": {
+			"name": "domain",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "domain",
+			"order": 3
+		},
+		"knowledgeArea": {
+			"name": "knowledgeArea",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "knowledgeArea",
+			"order": 4
+		}
+	}
+}

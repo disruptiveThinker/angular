@@ -1,0 +1,21 @@
+{
+	"type": "Collection",
+	"properties": {
+		"deptNo": {
+			"name": "deptNo",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "deptNo",
+			"order": 0
+		},
+		"deptName": {
+			"name": "deptName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "deptName",
+			"order": 1
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"empId": {
+			"name": "empId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "empId",
+			"order": 0
+		},
+		"empName": {
+			"name": "empName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "empName",
+			"order": 1
+		},
+		"deptId": {
+			"name": "deptId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "deptId",
+			"order": 2
+		},
+		"managerId": {
+			"name": "managerId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "managerId",
+			"order": 3
+		}
+	}
+}

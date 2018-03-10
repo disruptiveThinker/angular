@@ -1,0 +1,61 @@
+{
+	"type": "Collection",
+	"properties": {
+		"empId": {
+			"name": "empId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "empId",
+			"order": 0
+		},
+		"skillId": {
+			"name": "skillId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "skillId",
+			"order": 1
+		},
+		"skillLevel": {
+			"name": "skillLevel",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "skillLevel",
+			"order": 2
+		},
+		"internalExpInMonths": {
+			"name": "internalExpInMonths",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "internalExpInMonths",
+			"order": 3
+		},
+		"externalExpInMoths": {
+			"name": "externalExpInMoths",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "externalExpInMoths",
+			"order": 4
+		},
+		"currentProgramExpInMonths": {
+			"name": "currentProgramExpInMonths",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "currentProgramExpInMonths",
+			"order": 5
+		},
+		"updatedDate": {
+			"name": "updatedDate",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "updatedDate",
+			"order": 6
+		}
+	}
+}
